@@ -1,0 +1,34 @@
+{
+  "name": "wikia",
+  "version": "0.0.1",
+  "description": "Wrapper to interact with the Wikia API",
+  "main": "./src/Wikia.js",
+  "scripts": {
+    "test": "eslint .",
+    "docs": "jsdoc -c jsdoc.json && mv docs/wikia/*/* docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pollen5/wikia.git"
+  },
+  "keywords": [
+    "wikia",
+    "api",
+    "rest",
+    "wrapper"
+  ],
+  "author": "PoLLeN",
+  "license": "MIT",
+  "dependencies": {
+    "ladybug-fetch": "latest"
+  },
+  "devDependencies": {
+    "eslint-config-ladybug": "github:pollen5/eslint-config-ladybug",
+    "eslint": "^4.18.1",
+    "@pixi/jsdoc-template": "^2.4.2"
+  },
+  "bugs": {
+    "url": "https://github.com/pollen5/wikia/issues"
+  },
+  "homepage": "https://github.com/pollen5/wikia#readme"
+}
