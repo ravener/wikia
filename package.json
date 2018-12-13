@@ -1,6 +1,6 @@
 {
   "name": "wikia",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wrapper to interact with the Wikia API",
   "main": "./src/Wikia.js",
   "scripts": {
