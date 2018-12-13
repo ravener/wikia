@@ -25,7 +25,7 @@ class Wikia {
      * The base URL used for requests.
      * @type {String}
      */
-    this.baseURL = `http://${wiki ? `${wiki}.` : ""}wikia.com/api/v1`;
+    this.baseURL = `http://www.${wiki ? `${wiki}.` : ""}wikia.com/api/v1`;
 
     /**
      * The wiki name this instance was made for.
