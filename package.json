@@ -5,7 +5,7 @@
   "main": "./src/Wikia.js",
   "scripts": {
     "test": "eslint .",
-    "docs": "jsdoc -c jsdoc.json && mv docs/wikia/*/* docs"
+    "docs": "rm -rf docs && jsdoc -c jsdoc.json && mv docs/wikia/*/* docs && echo 'wikia.itsladybug.tk' > docs/CNAME && echo 'Done!'"
   },
   "repository": {
     "type": "git",

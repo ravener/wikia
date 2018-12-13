@@ -54,18 +54,18 @@ class Wikia {
    * @param {Boolean} [options.includeDomain=true] - Wether to include the wiki domain in the results.
    * @param {Number} [options.limit] - Amount to limit the results.
    * @param {Number} [options.batch] - The batch/page index to retrieve.
-   * @returns {Promise<Array<any>>}
+   * @returns {Promise<any>}
    */
-  searchWikis(term, { expand, hub, lang, includeDomain = true, limit, batch } = {}) {
+  searchWikis(string, { expand, hub, lang, includeDomain = true, limit, batch } = {}) {
     const req = this.request("/Wikis/ByString")
-      .query({ string: String(term), includeDomain: String(includeDomain) });
+      .query({ string, includeDomain });
     if(Array.isArray(lang)) lang = lang.join(",");
     if(hub) req.query({ hub });
     if(lang) req.query({ lang });
     if(limit) req.query({ limit });
     if(expand) req.query({ expand: 1 });
     if(batch) req.query({ batch });
-    return req.then((res) => res.body.items || []);
+    return req.then((res) => res.body);
   }
   
   /**
