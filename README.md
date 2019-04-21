@@ -27,7 +27,7 @@ const wikia = new Wikia({ wiki: "miraculousladybug" });
 ```
 
 ## Useful Links
-- [Documentation](https://wikia.itsladybug.tk) for full documentation.
+- [Documentation](https://wikia.itsladybug.ml) for full documentation.
 - [Discord Server](https://discord.gg/mDkMbEh) best way to contact me.
 - [Wikia API Documentation](http://wikia.com/api/v1) to see response body schemas, etc.
 
