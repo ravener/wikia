@@ -1,6 +1,8 @@
 # Wikia
 A simple wrapper to interact with the [Wikia API](https://wikia.com/api/v1).
 
+> This package is outdated and used the /api/v1 rest api which is deprecated use the new MediaWiki api.php endpoint, there may be other wrappers for it.
+
 ## Install
 ```sh
 npm install wikia
